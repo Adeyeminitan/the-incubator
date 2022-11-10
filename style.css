@@ -8,10 +8,41 @@ h1 {
   font-size: 100px;
 }
 
+/* @keyframes scaling{
+  0%{
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+
+  100%{
+    transform: scaleY(1);
+    transform: scaleX(1.1);
+  }
+}
+
+p{
+  animation: scaling 1.2s infinite;
+} */
+
 h4 {
   word-spacing: 10px;
   letter-spacing: 3px;
+  text-align: center;
 }
+
+input {
+  transition: width 0.4s ease-in-out;
+}
+
+form :hover,
+  form :active {
+    border-color: antiquewhite;
+    transition: border-color 0.5s ease-in;
+  }
+
+  form :focus{
+    color: black;
+  }
 
 .hatch {
   margin-top: 100px;
@@ -29,10 +60,12 @@ h4 {
 }
 
 #email {
+  display: block;
   margin-top: 40px;
   border-radius: 20px;
-  padding: 5px 700px 5px 20px;
+  padding: 5px 7px 5px 20px;
   border-style: groove;
+  width: 700px;
 }
 
 /* media queries */
@@ -64,13 +97,28 @@ h4 {
   h4 {
     word-spacing: 0px;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   #email {
     margin-top: 40px;
     border-radius: 20px;
-    padding: 5px 400px 5px 20px;
+    padding: 5px 4px 5px 20px;
     border-style: groove;
+    box-sizing: content-box;
+    width: 400px;
+  }
+
+  input {
+    width: 250px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  form :hover,
+  form :active {
+    /* width: 100%; */
+    border-color: antiquewhite;
+    transition: border-color 0.5s ease-in;
   }
 }
 
@@ -87,8 +135,9 @@ h4 {
   #email {
     margin-top: 40px;
     border-radius: 20px;
-    padding: 5px 340px 5px 20px;
+    padding: 5px 4px 5px 20px;
     border-style: groove;
+    width: 300px;
   }
 
   .question {
@@ -109,8 +158,9 @@ h4 {
   #email {
     margin-top: 40px;
     border-radius: 20px;
-    padding: 5px 240px 5px 20px;
+    padding: 5px 4px 5px 20px;
     border-style: groove;
+    width: 250px;
   }
 
   .question {
@@ -125,14 +175,38 @@ h4 {
   }
 
   h4 {
-    font-size: medium;
+    font-size: 15px;
+    text-align: center;
+  }
+  h5{
+    text-align: center;
   }
 
+
   #email {
+    /* width: 200px; */
+    margin: 0 auto;
     margin-top: 40px;
     border-radius: 20px;
-    padding: 5px 200px 5px 20px;
+    padding: 5px 2px 5px 20px;
     border-style: groove;
+    width: 250px;
+  }
+
+  input {
+    width: 350px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  form :hover,
+  form :active {
+    width: 360px;
+    border-color: antiquewhite;
+    transition: border-color 0.5s ease-in;
+  }
+
+  form :focus{
+    color: black;
   }
 
   .question {
@@ -140,21 +214,33 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 335px) {
   h1 {
     font-family: "Courier Prime", monospace;
     font-size: 38px;
+  }
+
+  h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .email h5{
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .hero-text h4 {
     font-size: 18px;
   }
 
-  .email {
+  #email {
     margin-top: 40px;
     border-radius: 15px;
-    padding: 4px 140px 4px 20px;
+    padding: 4px 4px 4px 20px;
     border-style: groove;
+    width: 250px;
   }
 
   .question {
@@ -171,5 +257,83 @@ h4 {
     letter-spacing: 1px;
     padding: 5px;
     font-size: smaller;
+  }
+
+  input {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  form :hover,
+  form :active {
+    width: 200px;
+    border-color: antiquewhite;
+    transition: border-color 0.5s ease-in;
+  }
+
+  form :focus{
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .email h5{
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero-text h4 {
+    font-size: 18px;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 4px 4px 4px 20px;
+    border-style: groove;
+    width: 250px;
+  }
+
+  .question {
+    padding-left: 45px;
+    font-size: smaller;
+  }
+
+  .hatch {
+    margin-top: 100px;
+    border: 1px solid;
+    background-color: rgb(3, 3, 24);
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: smaller;
+  }
+
+  input {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  form :hover,
+  form :active {
+    width: 200px;
+    border-color: antiquewhite;
+    transition: border-color 0.5s ease-in;
+  }
+
+  form :focus{
+    color: black;
   }
 }
