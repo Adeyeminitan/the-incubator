@@ -1,0 +1,175 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Courier Prime", monospace;
+  font-size: 100px;
+}
+
+h4 {
+  word-spacing: 10px;
+  letter-spacing: 3px;
+}
+
+.hatch {
+  margin-top: 100px;
+  border: 1px solid;
+  background-color: rgb(3, 3, 24);
+  color: white;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+
+.question {
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+#email {
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 5px 700px 5px 20px;
+  border-style: groove;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 80px;
+  }
+
+  h4 {
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 500px 5px 20px;
+    border-style: groove;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 65px;
+  }
+
+  h4 {
+    word-spacing: 0px;
+    letter-spacing: 1px;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 400px 5px 20px;
+    border-style: groove;
+  }
+}
+
+@media (max-width: 568px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: large;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 340px 5px 20px;
+    border-style: groove;
+  }
+
+  .question {
+    font-size: large;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: medium;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 240px 5px 20px;
+    border-style: groove;
+  }
+
+  .question {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: medium;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 200px 5px 20px;
+    border-style: groove;
+  }
+
+  .question {
+    font-size: small;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: smaller;
+  }
+
+  #email {
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 4px 140px 4px 20px;
+    border-style: groove;
+  }
+
+  .question {
+    padding-left: 45px;
+    font-size: smaller;
+  }
+
+  .hatch {
+    margin-top: 100px;
+    border: 1px solid;
+    background-color: rgb(3, 3, 24);
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: smaller;
+  }
+}
