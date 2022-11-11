@@ -30,6 +30,7 @@
     <div class="email d-flex flex-column align-items-center">
       <h5 class="question">WANT TO KNOW WHEN THAT HAPPENS?</h5>
       <form action="email">
+        <p id="error-message" style="color: red; text-align: center; padding-top: 20px; font-size: 10px;"></p>
         <input
           type="email"
           name="email"
@@ -37,8 +38,10 @@
           placeholder="user@email.com"
         />
       </form>
+      <button type="submit" id="submit" class="btn">Subscribe</button>
     </div>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/8e3c604964.js"
       crossorigin="anonymous"
@@ -58,5 +61,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
